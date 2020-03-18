@@ -1,8 +1,5 @@
 #!/usr/bin/env python
-import argparse
+import sys
 
-parser = argparse.ArgumentParser()
-parser.add_argument('ip', help='ip to be reversed')
-args = parser.parse_args()
-ipd = args.ip.split('.')
-print("%s.%s.%s.%s" % (ipd[3], ipd[2], ipd[1], ipd[0]))
+ip_sections = sys.argv[1].split(".")
+print("{}.{}.{}.{}".format(ip_sections[3], ip_sections[2], ip_sections[1], ip_sections[0]))

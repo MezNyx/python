@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 pycodestyle = "*"
+kubernetes = "*"
+pick = "*"
 
 [requires]
 python_version = "3.8"
